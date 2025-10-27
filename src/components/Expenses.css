@@ -1,0 +1,43 @@
+/* Transactions Table Styles */
+.transactions {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.transactions-table th {
+  font-weight: 600;
+  background-color: var(--card);
+  position: sticky;
+  top: 0;
+}
+
+.transactions-table tr:hover {
+  background-color: var(--hover);
+}
+
+.amount-column {
+  text-align: right;
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+.debit .amount-column {
+  color: #ff4444;
+}
+
+.credit .amount-column {
+  color: #44ff44;
+}

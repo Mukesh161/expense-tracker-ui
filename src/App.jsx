@@ -42,7 +42,7 @@ export default function App() {
             {feature === 'Dashboard' && <Dashboard expenses={expenses} />}
             {feature === 'Add Expense' && <AddExpense onAdd={addExpense} />}
             {feature === 'Expenses' && <ExpenseList expenses={expenses} onRemove={removeExpense} />}
-            {feature === 'Analytics' && <Analytics expenses={expenses} />}
+            {feature === 'Analytics' && <Analytics />}
           </main>
         </div>
       </div>

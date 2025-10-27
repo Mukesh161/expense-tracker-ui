@@ -1,0 +1,85 @@
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filter-type-selector {
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+  background: var(--input-bg);
+  border-radius: 4px;
+}
+
+.filter-type-selector label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.date-filter,
+.month-year-filter {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 12px;
+}
+
+.date-inputs label,
+.month-year-filter label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.date-inputs input,
+.month-year-filter select {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--input-bg);
+  color: var(--text);
+  min-width: 100px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.month-year-filter select option {
+  background: var(--card);
+  color: var(--text);
+}
+
+.date-inputs input:focus,
+.month-year-filter select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Add a custom dropdown arrow that works with dark mode */
+.month-year-filter select {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 32px;
+}
+
+.month-year-filter {
+  display: flex;
+  gap: 12px;
+}
